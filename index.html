@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Madhya Pradesh Government Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(140deg,#1976b2 40%, #4fc3f7 100%);
+      margin: 0;
+      padding: 0;
+    }
+    .mp-header {
+      background: #f5f6fa;
+      padding: 18px 0;
+      box-shadow: 0 1px 7px #185a9d18;
+    }
+    .logo-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+    }
+    .mp-logo {
+      width: 52px; height: 52px;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 1px 4px #185a9d1c;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .mp-logo img { width: 38px; height: 38px; }
+    .gov-title {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #0c3a66;
+      letter-spacing: .5px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 9px;
+    }
+    .nav-link {
+      color: #185a9d;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 0 13px;
+      font-size: 1.05rem;
+      transition: color .18s;
+    }
+    .nav-link:hover { color: #0077bb; }
+    .hero {
+      background: linear-gradient(90deg, #1976b2 70%, #64b5f6 120%);
+      color: #fff;
+      text-align: center;
+      padding: 38px 0 30px;
+    }
+    .hero h1 {
+      margin: 0; font-size: 2.1rem; letter-spacing: .5px;
+      font-weight: 600;
+    }
+    .hero p {
+      margin: 11px 0 0 0;
+      font-size: 1.20rem;
+      color: #fafafad7;
+    }
+    .cards-row {
+      display: flex;
+      gap: 20px;
+      max-width: 940px; margin: 36px auto 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .mp-card {
+      background: #fff;
+      border-radius: 11px;
+      box-shadow: 0 2px 15px #185a9d18;
+      min-width: 270px; max-width: 300px; flex:1 1 270px;
+      padding: 25px 18px 18px 18px;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .mp-card i {
+      color: #1976b2; font-size: 2.3rem; margin-bottom: 8px;
+    }
+    .mp-card h3 {
+      color: #1976b2; font-size: 1.2rem; margin: 9px 0 7px;
+      font-weight: 600;
+    }
+    .mp-card p { color: #444b; font-size: .96rem; margin: 0 0 5px 0;}
+    .cta-btn {
+      margin-top: 20px;
+      padding: 11px 29px;
+      background: #1976b2;
+      color: #fff;
+      border: none;
+      font-size: 1.07rem;
+      font-weight: 600;
+      border-radius: 7px;
+      box-shadow: 0 1px 7px #1976b218;
+      cursor: pointer;
+      transition: background .17s;
+    }
+    .cta-btn:hover { background: #145286;}
+    .notice {
+      max-width: 940px;
+      margin: 20px auto 0;
+      background: #ffeedd;
+      color: #914510;
+      border-left: 4px solid #ffbc46;
+      padding: 10px 18px;
+      border-radius: 7px;
+      font-size: 1.05rem;
+    }
+    /* Grievance Form Demo */
+    .feature-section {
+      max-width: 900px;
+      background: #f5faff;
+      margin: 37px auto;
+      border-radius: 12px;
+      box-shadow: 0 1px 12px #1976b222;
+      padding: 32px 21px 21px 21px;
+    }
+    .section-title {
+      color: #1976b2;
+      font-size: 1.25rem;
+      font-weight: 700;
+      border-left: 5px solid #1976b2a0;
+      padding-left: 12px;
+      margin-bottom: 15px;
+    }
+    .footer {
+      background: #23466e;
+      color: #eee;
+      text-align: center;
+      padding: 19px 7px 11px 7px;
+      font-size: 0.96rem;
+      margin-top: 40px;
+    }
+    @media (max-width: 800px) {
+      .cards-row {flex-direction:column; align-items:center;}
+      .mp-card {max-width: 95vw; min-width:190px;}
+      .feature-section{padding:15px 4vw;}
+    }
+  </style>
+</head>
+<body>
+  <header class="mp-header">
+    <div class="logo-row">
+      <div class="mp-logo">
+        <!-- You can add actual MP Govt logo if available, here is sample -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Seal_of_Madhya_Pradesh.svg/120px-Seal_of_Madhya_Pradesh.svg.png" alt="MP Govt Logo">
+      </div>
+      <span class="gov-title">Government of Madhya Pradesh</span>
+    </div>
+    <nav>
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#">Departments</a>
+      <a class="nav-link" href="#">Schemes</a>
+      <a class="nav-link" href="#">E-Services</a>
+      <a class="nav-link" href="#">Contact Us</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Welcome to Madhya Pradesh Government Portal</h1>
+    <p>One-stop platform for citizen services, schemes, jobs, news, and public grievance redressal.</p>
+  </div>
+  <div class="cards-row">
+    <div class="mp-card">
+      <i class="fa-solid fa-users"></i>
+      <h3>Citizen Services</h3>
+      <p>Apply for certificates, registrations, and avail e-governance facilities anytime.</p>
+      <button class="cta-btn">View Services</button>
+    </div>
+    <div class="mp-card">
+      <i class="fa-solid fa-briefcase"></i>
+      <h3>Government Jobs</h3>
+      <p>Latest recruitment and results from MPPSC & other state departments.</p>
+      <button class="cta-btn">See Jobs</button>
+    </div>
+    <div class="mp-card">
+      <i class="fa-solid fa-scroll"></i>
+      <h3>Latest Schemes</h3>
+      <p>Information about government welfare, financial & social schemes for citizens.</p>
+      <button class="cta-btn">Browse Schemes</button>
+    </div>
+    <div class="mp-card">
+      <i class="fa-solid fa-bullhorn"></i>
+      <h3>News & Updates</h3>
+      <p>Stay updated with MP government announcements, events & notifications.</p>
+      <button class="cta-btn">Read News</button>
+    </div>
+  </div>
+  <div class="notice">
+    <i class="fa-solid fa-circle-info"></i>
+    Need to raise a grievance? Use our online <b>"Jansunwai PS Grievance System"</b> for quick redressal.
+  </div>
+
+  <div class="feature-section">
+    <div class="section-title"><i class="fa-solid fa-comment-dots"></i> Jansunwai - Public Grievance Registration</div>
+    <form onsubmit="addGri(event)" style="display:flex;flex-wrap:wrap;gap:15px;">
+      <input style="flex:1 1 180px;" id="griName" type="text" placeholder="Your Name (optional)">
+      <textarea style="flex:2 1 340px;" id="griMsg" rows="2" placeholder="Describe your grievance"></textarea>
+      <button style="flex:1 1 130px;min-width:120px;" class="cta-btn" type="submit">Submit</button>
+    </form>
+    <div id="griList" style="margin-top:23px;"></div>
+  </div>
+
+  <footer class="footer">
+    &copy; 2025 Government of Madhya Pradesh | <span style="color:#69f2fa;">Digital India</span> | Developed for Hackathon Demo
+  </footer>
+
+  <script>
+    // Grievance submission logic (demo only, uses localStorage)
+    function addGri(e){
+      e.preventDefault();
+      const name=document.getElementById('griName').value.trim();
+      const msg=document.getElementById('griMsg').value.trim();
+      if(!msg){alert('Please describe your grievance.');return;}
+      const g={name,msg,date:new Date().toLocaleString(),status:"Pending"};
+      let arr=JSON.parse(localStorage.getItem('gri')||'[]');
+      arr.unshift(g);
+      localStorage.setItem('gri',JSON.stringify(arr));
+      document.getElementById('griName').value='';
+      document.getElementById('griMsg').value='';
+      showGri();
+    }
+    function showGri(){
+      let arr=JSON.parse(localStorage.getItem('gri')||'[]');
+      const root=document.getElementById('griList');
+      root.innerHTML=arr.length===0? "<div style='color:#888;text-align:center'>No grievances submitted yet.</div>":"";
+      arr.forEach(g=>{
+        root.innerHTML+=`<div style="background:#e3f3ff;border-left:4px solid #1976b2b5;padding:11px 13px 7px 13px;border-radius:6px;margin-bottom:10px;">
+        <b style="color:#185a9d;">${g.name?g.name:"Anonymous"}</b>
+        <span style="float:right;color:#1976b2;">${g.status}</span>
+        <br>${g.msg}
+        <div style="font-size:.89em;color:#3d4865a0">${g.date}</div>
+        </div>`;
+      });
+    }
+    document.addEventListener('DOMContentLoaded',showGri);
+  </script>
+</body>
+</html>
